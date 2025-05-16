@@ -1,0 +1,8 @@
+{% extends 'layouts/layout.html' %}
+{% block body%}
+    <h1>Datos desde SQL Server d</h1>
+    {% for p in pruebas %}
+        <p>{{ p.id }} - {{ p.nombre }} - {{ p.dni }} - {{p.fecha}}</p>
+    {% endfor %}
+
+{%endblock%}
